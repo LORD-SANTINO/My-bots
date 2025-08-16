@@ -4,11 +4,15 @@ import Link from "next/link";
 
 export default function BotCard({ bot }) {
   return (
-    <div className="bot-card">
-      <img src={bot.image} alt={bot.name} style={{width: '100px'}} />
-      <h2>{bot.name}</h2>
-      <p>{bot.description}</p>
-      <p>Status: {bot.status}</p>
+    <article style={{ border: "1px solid #ddd", borderRadius: 12, padding: 16 }}>
+      <h2 style={{ margin: "0 0 8px" }}>{bot.name}</h2>
+      <p style={{ margin: "0 0 12px" }}>{bot.description}</p>
+      {bot.link && (
+        <a href={bot.link} target="_blank" rel="noreferrer">
+          Visit bot
+        </a>
+      )}
+    </article>
       <div>
         {bot.technologies.map(tech => (
           <span key={tech}>{tech} </span>
