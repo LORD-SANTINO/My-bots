@@ -1,16 +1,6 @@
-// /data/bots.js
-
+// data/bots.js
 const bots = [
-  {
-    id: "ai-logo-bot",
-    name: "AI Logo Bot",
-    description: "Generates logos from text prompts using AI.",
-    status: "Live",
-    technologies: ["Python", "Telegram API", "AI"],
-    link: "https://t.me/ai_logo_bot",
-    image: "/ai-logo-bot.png"
-  },
-  // Add more bots here
+  { id: "grp-helper", name: "Group Helper", description: "Moderation & utilities for Telegram groups.", link: "https://t.me/grphelper_bot" },
+  { id: "ipinfo", name: "IP Info Bot", description: "IP lookups and geolocation.", link: "https://t.me/daxgpt_bot" }
 ];
-
 export default bots;
