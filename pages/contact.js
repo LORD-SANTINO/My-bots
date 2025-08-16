@@ -5,7 +5,7 @@ export default function Contact() {
     <main>
       <h1>Contact Me</h1>
       <p>Want to discuss a project or request a custom bot? Reach out!</p>
-      <form action="mailto:youremail@example.com" method="POST" encType="text/plain">
+      <form action="mailto:daxtemx1@gmail.com" method="POST" encType="text/plain">
         <div>
           <label>Name: <input type="text" name="name" required /></label>
         </div>
@@ -19,7 +19,7 @@ export default function Contact() {
         </div>
         <button type="submit">Send</button>
       </form>
-      <p>Or email me at: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p>Or email me at: <a href="mailto:daxlord68@gmail.com"></a>DAX LORD</p>
     </main>
   );
     }
