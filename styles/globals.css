@@ -1,59 +1,118 @@
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: #20232a;
-  color: #f5f5f5;
+  font-family: 'Fira Mono', 'Consolas', Menlo, monospace;
+  background: #111215;
+  color: #23ff15;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  letter-spacing: 0.5px;
 }
 
 main {
-  max-width: 650px;
+  max-width: 700px;
   margin: 2rem auto;
-  background: #2c3038;
+  background: #18191e;
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.3);
+  box-shadow: 0 6px 24px #00ff8a10;
+  border: 2px solid #00ff8a22;
 }
 
 h1, h2 {
-  color: #61dafb;
+  color: #56ff8d;
+  text-shadow: 0 0 5px #00ff406c, 0 0 2px #0fa;
+  font-family: inherit;
+}
+
+nav {
+  background: #131417;
+  border-bottom: 2px solid #0fa;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.7rem 2rem;
+  list-style: none;
+  margin: 0;
+}
+
+nav a {
+  color: #00ffa2;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #0ff;
+  text-shadow: 0 0 8px #0fa;
 }
 
 a {
-  color: #61dafb;
-  text-decoration: none;
+  color: #0ff;
+  text-decoration: underline dotted;
 }
+
 a:hover {
-  text-decoration: underline;
+  color: #fff;
+  text-shadow: 0 0 6px #00ffae;
+}
+
+.bot-card {
+  background: #16181c;
+  border-radius: 12px;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px #00ffae15;
+  border-left: 4px solid #0fa;
+  color: #25ff98;
+}
+
+button {
+  background: #18191e;
+  color: #0fa;
+  border: 2px solid #0fa;
+  padding: 0.65rem 1.3rem;
+  font-family: inherit;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+button:hover {
+  background: #0fa;
+  color: #101417;
+  border: 2px solid #0cfea9;
+  text-shadow: 0 0 3px #002;
 }
 
 form input, form textarea {
   width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
+  padding: 0.8rem;
+  margin-bottom: 1.1rem;
   border-radius: 6px;
-  border: 1px solid #444;
-  background: #1d2026;
-  color: #f5f5f5;
+  border: 1.5px solid #43ffc3;
+  background: #0d0f12;
+  color: #98ffda;
+  font-family: inherit;
 }
 
-button {
-  background: #61dafb;
-  color: #20232a;
-  border: none;
-  padding: 0.7rem 1.5rem;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
+footer {
+  margin-top: 2rem;
+  padding: 1rem 0 0.5rem 0;
+  text-align: center;
+  color: #4affa3;
+  background: transparent;
+  font-size: 0.96em;
+  border-top: 1px solid #232;
+  text-shadow: 0 0 2px #0fa;
 }
 
-.bot-card {
-  background: #23272f;
+img {
+  filter: grayscale(50%) brightness(0.9) contrast(1.15) drop-shadow(0 0 4px #0fa4);
   border-radius: 10px;
-  padding: 1.2rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 1px 6px rgba(0,0,0,0.15);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+    }
+  
