@@ -13,6 +13,9 @@ export default function Navbar() {
         <li>
           <Link href="/contact"><span style={{ color: "#61dafb" }}>Contact</span></Link>
         </li>
+       <li>
+         <Link href="/blog"><span style={{ color: "#61dafb" }}>Blog</span></Link>
+        </li>
       </ul>
     </nav>
   );
