@@ -8,7 +8,7 @@ export default function BlogForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch('/api/blogs.js', {
+    const res = await fetch('/api/blogs', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({ title, author, content }),
